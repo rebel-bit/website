@@ -21,10 +21,6 @@ http
       fs.readFile("perpus.html", function (_err, data) {
         res.end(data);
       });
-    } else if (url === "/view") {
-      fs.readFile("/assets/pdf/contoh.pdf", function (_err, data) {
-        res.end(data);
-      });
     } else {
       res.write("<center><pre><code>awas tak hacked</center></pre></code>");
       res.end();
